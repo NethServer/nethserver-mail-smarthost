@@ -40,8 +40,10 @@ event_templates($event,
 		@templates
 );
 
-event_actions($event,
-	      'nethserver-mail-postmap-update' => '20');
+event_actions($event, qw(
+    initialize-default-databases 00
+    nethserver-mail-postmap-update 20
+));
 
 event_services($event,
 	       'postfix' => 'restart'
