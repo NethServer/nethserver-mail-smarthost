@@ -1,6 +1,6 @@
 Summary: Configuration for smart host
 Name: nethserver-mail-smarthost
-Version: 0.0.1
+Version: 0.1.0
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name}
@@ -34,3 +34,6 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 0.1.0-1
+- First NS7 release
+
