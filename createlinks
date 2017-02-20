@@ -63,3 +63,10 @@ event_actions($event,
 event_services($event,
 	       'postfix' => 'reload');
 
+#
+# migration-import event
+#
+event_actions('migration-import', qw(
+    nethserver-mail-migrate-smarthost      30
+));
+
