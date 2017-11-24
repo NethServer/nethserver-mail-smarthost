@@ -1,6 +1,6 @@
 Summary: Configuration for smart host
 Name: nethserver-mail-smarthost
-Version: 0.1.1
+Version: 1.0.0
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name}
@@ -34,6 +34,9 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Fri Nov 24 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.0-1
+- GSSAPI error from Postfix smarthost client - Bug NethServer/dev#5366
+
 * Mon Mar 06 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.1.1-1
 - Migration from sme8 NethServer/dev#5196
 
